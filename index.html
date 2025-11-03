@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta property="og:title" content="Bryan Drouet | Étudiant BTS CIEL - Développement Web" />
+    <meta property="og:description" content="Portfolio professionnel de Bryan Drouet, étudiant en BTS CIEL option IR. Découvrez mon parcours, mes compétences en développement web et mes expériences professionnelles." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://seiris.groupe3.free.fr/index.html" />
+    <meta property="og:image" content="http://seiris.groupe3.free.fr/assets/largeIcon.jpeg" />
+    <meta property="og:image:alt" content="Photo de profil Bryan Drouet" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Bryan Drouet | Étudiant BTS CIEL - Développement Web" />
+    <meta name="twitter:description" content="Étudiant en BTS CIEL option IR à Saint Gabriel Saint Michel. Compétences : HTML, CSS, JavaScript, PHP, SQL. Recherche de stage en développement web du 18 mai au 26 juin 2026." />
+    <meta name="twitter:image" content="http://seiris.groupe3.free.fr/assets/largeIcon.jpeg" />
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bryan Drouet | Portfolio Développeur Web - BTS CIEL</title>
+    <link rel="icon" type="image/png" href="assets/icon.png" />
+    <meta name="description" content="Portfolio de Bryan Drouet, étudiant en BTS CIEL option IR. Parcours académique, compétences techniques en développement web et expériences professionnelles. Stage recherché mai-juin 2026." />
+    <meta name="keywords" content="Bryan Drouet, portfolio, développeur web, BTS CIEL, HTML, CSS, JavaScript, PHP, SQL, stage développement, Saint Gabriel Saint Michel, Cholet, Bressuire">
+
+    
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/styleColors.css">
+    <meta http-equiv="Permissions-Policy" content="accelerometer=(), gyroscope=(), magnetometer=(), fullscreen=(self), geolocation=()">
+    
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCTaOFSLm6u9WbS_N7eswvN9DL7NjLVYuA&callback=initMap&loading=async" async defer></script>
+    <script>
+        (function(){
+            emailjs.init({
+                publicKey: "6ZXg3QzSw3d65rQVZ" 
+            });
+        })();
+
+        function initMap() {
+            const attach = () => {
+                const btnPlan = document.getElementById('btnPlan');
+                const btnItin = document.getElementById('btnItineraire');
+                const btnSV = document.getElementById('btnStreetView');
+                if (btnPlan) btnPlan.addEventListener('click', plan);
+                if (btnItin) btnItin.addEventListener('click', itineraire);
+                if (btnSV) btnSV.addEventListener('click', streetView);
+            };
+            if (document.readyState === 'loading') {
+                document.addEventListener('DOMContentLoaded', attach);
+            } else {
+                attach();
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="bg-shapes">
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div> 
+        <div class="shape"></div>
+        <div class="shape"></div>
+    </div>
+    <header>
+        <div class="container">
+            <nav class="glass navBar">
+                <div class="logo" onclick="showPage('pageIdentity')">
+                    <img src="assets/icon.png" class="logo-icon"></img>
+                    <span class="textLogo">Mon Portfolio</span>
+                </div>
+                    <div class="nav-links">
+                    <a href="#index.html?page=pageIdentity" onclick="showPage('pageIdentity')" class="active">Identité</a>
+                    <a href="#index.html?page=pageBackground" onclick="showPage('pageBackground')">Parcours</a>
+                    <a href="#index.html?page=pageExperience" onclick="showPage('pageExperience')">Expérience</a>
+                    <a href="#index.html?page=pageContact" onclick="showPage('pageContact')">Contact</a>
+                </div>
+                <div class="burger" id="burgerMenu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <div id="pageIdentity" class="page active">
+        <div class="container">
+            <div class="content-wrapper">
+                <section class="hero glass">
+                    <div class="hero-image">
+                        <img src="assets/largeIcon.jpeg" alt="Plan de large de Bryan" />
+                    </div>
+                    <div class="hero-content">
+                        <h1>Bienvenue sur mon Portfolio !</h1>
+                        <p>Vous pourrez retrouver ici mes différentes compétences, mon parcours mais aussi et surtout les différentes façons de me contacter.</p>
+                        <div class="buttonsHero">
+                            <a href="docs/template/index.html" class="cta-button">Voir le template utilisé</a>
+                            <a href="docs/miniProjet1-Portfolio.pdf" class="cta-button" target="_blank">Voir le cahier des charges</a>
+                            <a href="docs/CV_Bryan_Drouet.pdf" class="cta-button" target="_blank">Voir mon CV (PDF)</a>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="features">
+                    <div class="team-member glassHover">
+                        <img src="assets/avatar.png" alt="Profil" class="team-avatar icon-white">
+                            <h3>Profil</h3>
+                        <p>Bryan Drouet, 18 ans.</p>
+                        <p class="infoText">Développeur Web basé à Rorthais (79700).</p>
+                    </div>
+                    
+                    <div class="team-member glassHover">
+                        <img src="assets/langues.png" alt="Langues" class="team-avatar icon-white">
+                        <h3>Langues</h3>
+                        <ul class="bio">
+                            <li>Français <span class="infoText">(langue maternelle)</span></li>
+                            <li>Anglais <span class="infoText">(B2)</span></li>
+                            <li>Espagnol <span class="infoText">(B1)</span></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="team-member glassHover">
+                        <img src="assets/coeur.png" alt="Centres d'intérêt" class="team-avatar icon-white">
+                        <h3>Centres d'intérêt</h3>
+                        <ul class="bio">
+                            <li>ClubRadio Mauléon</li>
+                            <li>Serveur Minecraft <span class="infoText">(MauléoBlock)</span></li>
+                            <li>Jeux vidéo <span class="infoText">(Zelda, Minecraft, Mario)</span></li>
+                        </ul>
+                    </div>
+
+                    <div class="team-member glassHover">
+                        <img src="assets/atouts.png" alt="Atouts" class="team-avatar icon-white">
+                        <h3>Atouts</h3>
+                        <p class="bio">Autonome, à l'écoute, curieux, astucieux.</p>
+                    </div>
+
+                    <div class="team-member glassHover">
+                        <img src="assets/voiture.png" alt="Mobilité" class="team-avatar icon-white">
+                        <h3>Mobilité</h3>
+                        <p>Permis B et véhicule personnel.</p>
+                        <p class="infoText">Mobile sur Bressuire et Cholet</p>
+                    </div>
+
+                    <div class="team-member glassHover">
+                        <img src="assets/objectif.png" alt="Objectif" class="team-avatar icon-white">
+                        <h3>Objectif</h3>
+                        <p>Stage en développement Web.</p>
+                        <p class="infoText">Du 18 mai au 26 juin 2026</p>
+                    </div>
+                </section>
+
+                <section class="team-section">
+                    <h2>Compétences techniques</h2>
+                    <div class="team-grid technique">
+                        <div class="team-member glassHover">
+                            <img src="assets/github.png" alt="Développement Web" class="team-avatar icon-white">
+                            <h3>Développement</h3>
+                            <p class="role">Web</p>
+                            <p class="bio">HTML, CSS, JavaScript, PHP, SQL.</p>
+                        </div>
+                        <div class="team-member glassHover">
+                            <img src="assets/outils.png" alt="Outils" class="team-avatar icon-white">
+                            <h3>Outils</h3>
+                            <p class="role">Environnements</p>
+                            <ul class="bio">
+                                <li>Visual Studio Code <span class="infoText">(2022)</span></li>
+                                <li>Oracle VirtualBox</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    
+    <div id="pageBackground" class="page">
+        <div class="container">
+            <div class="content-wrapper">
+                <section class="about-content">
+                    <div class="about-text glass">
+                        <h2>À propos</h2>
+                        <p>Je m'appelle <strong>Bryan Drouet</strong>, futur développeur web. Diplômé d'un <strong>BAC STI2D (option SIN)</strong>, je poursuis actuellement un <strong>BTS CIEL (option IR)</strong> à <strong>Saint Gabriel Saint Michel</strong>.</p>
+                        <p>J'aime concevoir des interfaces modernes, accessibles et performantes. Passionné par les nouvelles technologies, je développe mes compétences en HTML, CSS, JavaScript, PHP et SQL.</p>
+                    </div>
+                </section>
+
+                <section class="team-section">
+                    <h2>Formations et diplômes</h2>
+                    <div class="team-grid">
+                        <div class="team-member glassHover">
+                            <img src="assets/dev.png" alt="BTS CIEL" class="team-avatar icon-white">
+                            <h3>BTS CIEL (option IR)</h3>
+                            <p class="role">En cours</p>
+                            <p class="bio">2025 – 2027</p>
+                            <p class="bio">Saint Gabriel Saint Michel</p>
+                        </div>
+                        <div class="team-member glassHover">
+                            <img src="assets/devSciences.png" alt="Bac STI2D" class="team-avatar icon-white">
+                            <h3>Bac STI2D (option SIN)</h3>
+                            <p class="role">Obtenu</p>
+                            <p class="bio">2023 – 2025</p>
+                            <p class="bio">Mention assez bien</p>
+                        </div>
+                        <div class="team-member glassHover">
+                            <img src="assets/college.png" alt="DNB" class="team-avatar icon-white">
+                            <h3>Diplôme National du Brevet</h3>
+                            <p class="role">Obtenu</p>
+                            <p class="bio">2018 – 2022</p>
+                            <p class="bio">Mention bien</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    
+    <div id="pageExperience" class="page">
+        <div class="container">
+            <div class="content-wrapper">
+                <section class="hero glass">
+                    <h1>Mes expériences professionnelles</h1>
+                    <p>Les différentes missions que j'ai effectuées.</p>
+                </section>
+
+                <section class="services-grid">
+                    <div class="service-card glassHover">
+                        <div class="service-header">
+                            <div class="service-icon"><img src="assets/PBC.png" alt="Travail" class="icon-white" /></div>
+                            <h3>PBC Plaquistes — Intérim</h3>
+                        </div>
+                        <p>Cholet • Juillet 2025 • 1 mois</p>
+                        <ul class="service-features">
+                            <li>Respect des consignes et sécurité</li>
+                            <li>Esprit d'équipe sur chantier</li>
+                            <li>Rigueur et ponctualité</li>
+                        </ul>
+                    </div>
+
+                    <div class="service-card glassHover">
+                        <div class="service-header">
+                            <div class="service-icon"><img src="assets/OGuste.png" alt="Travail" class="icon-white" /></div>
+                            <h3>O'Guste — Intérim</h3>
+                        </div>
+                        <p>Mortagne-sur-Sèvre • Juillet 2024 • 1 semaine</p>
+                        <ul class="service-features">
+                            <li>Polyvalence et service</li>
+                            <li>Gestion des priorités</li>
+                            <li>Adaptation rapide</li>
+                        </ul>
+                    </div>
+
+                    <div class="service-card glassHover">
+                        <div class="service-header">
+                            <div class="service-icon"><img src="assets/A3Distrib.png" alt="Stage" class="icon-white" /></div>
+                            <h3>A3Distrib — Stage d'observation</h3>
+                        </div>
+                        <p>Cholet • 2022 • 1 semaine</p>
+                        <ul class="service-features">
+                            <li>Découverte de l'environnement pro</li>
+                            <li>Observation des processus</li>
+                            <li>Curiosité et prise de notes</li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    
+    <div id="pageContact" class="page">
+        <div class="container">
+            <div class="content-wrapper">
+                <section class="contact-grid">
+                    <div class="contact-form glass">
+                        <h2>Me contacter</h2>
+                        <form>
+                            <div class="form-group">
+                                <label for="name">Prénom<strong class="required">&nbsp;*</strong></label>
+                                <input type="text" id="name" name="name" placeholder="Entrez votre prénom" required autocomplete="given-name">
+                            </div>
+                            <div class="form-group">
+                                <label for="subname">Nom<strong class="required">&nbsp;*</strong></label>
+                                <input type="text" id="subname" name="subname" placeholder="Entrez votre nom" required autocomplete="family-name">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Adresse email<strong class="required">&nbsp;*</strong></label>
+                                <input type="email" id="email" name="email" placeholder="Entrez votre email" required autocomplete="email">
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Objet<strong class="required">&nbsp;*</strong></label>
+                                <input type="text" id="subject" name="subject" placeholder="De quoi s'agit-il ?" required autocomplete="subject">
+                            </div>
+                            <div class="form-group">
+                                <label for="message" class="labelinfoText">Message<strong class="required">&nbsp;*</strong></label>
+                                <p class="infoText">Votre message peut prendre en charge le format <a href="https://marked.js.org/demo/" target="_blank" class="cliquable">markdown.</a></p>
+                                <textarea id="message" name="message" placeholder="Parlez-moi de votre demande..." required autocomplete="off"></textarea>
+                            </div>
+                            <button type="submit" class="cta-button">Envoyer votre message</button>
+                        </form>
+                    </div>
+
+                    <div class="contact-info glass">
+                        <h2>Mon contact</h2>
+                        
+                        <div class="contact-item1">
+                            <div class="contact-item-text">
+                                <h4>Email</h4>
+                                <a href="mailto:bryan.drouet24@gmail.com" class="cliquable">bryan.drouet24@gmail.com</a>
+                            </div>
+                            <div class="contact-item-icon"><img src="assets/mail.png" alt="Email" class="icon-white"/></div>
+                        </div>
+
+                        <div class="contact-item2">
+                            <div class="contact-item-text">
+                                <h4>Numéro de téléphone</h4>
+                                <p class="infoText">(SMS uniquement — merci de ne pas appeler)</p>
+                                <a href="sms:+33647201798" class="cliquable">+33 6 47 20 17 98</a>
+                            </div>
+                            <div class="contact-item-icon"><img src="assets/sms.png" alt="SMS" class="icon-white"/></div>
+                        </div>
+
+                        <div class="contact-item3">
+                            <div class="contact-item-text">
+                                <h4>Réseaux</h4>
+                                <ul>
+                                    <li><a href="https://linktr.ee/Bryan_Drouet" class="cliquable" target="_blank">Mes réseaux</a></li>
+                                    <li><a href="https://linktr.ee/Clubradio_mauleon" class="cliquable" target="_blank">ClubRadio Mauléon</a></li>
+                                    <li><a href="https://linktr.ee/mauleoblo" class="cliquable" target="_blank">MauléoBlock</a></li>
+                                </ul>
+                            </div>
+                            <div class="contact-item-icon"><img src="assets/linktree.png" alt="Réseaux (Linktree)" class="icon-white"/></div>
+                        </div>
+
+                        <div class="contact-item4">
+                            <div class="contact-item-text">
+                                <h4>Adresse</h4>
+                                <p>12 rue des Pluviers</p>
+                                <p class="infoText adresse">79700 Rorthais, Mauléon</p>
+                            </div>
+                            <div class="contact-item-icon"><img src="assets/ping.png" alt="Adresse" class="icon-white"/></div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="contact-map-section">
+                    <div class="contact-map glass">
+                        <h2>Me retrouver</h2>
+                        <h3>Rechercher :</h3>
+                        <div class="form-group">
+                            <input name="plan" type="text" id="plan" placeholder="12 Rue des Fleurs, Bloc 3, 75001 Paris">
+                        </div>
+                        <div class="mapButtons1">
+                            <button class="cta-button" id="btnPlan" onclick="plan()">Rechercher une adresse</button>
+                            <button class="cta-button" id="btnStreetView" onclick="streetView()">Accéder à Google Street View</button>
+                        </div>
+                        <div id="map-error1">&nbsp;</div>
+                        <h3>Itinéraire :</h3>
+                        <div class="form-group itineraireForm">
+                            <input type="text" id="depart" placeholder="Départ">
+                            <input type="text" id="arrivee" placeholder="Arrivée">
+                        </div>
+                        <div class="mapButtons2">
+                            <button class="cta-button" id="btnItineraire" onclick="itineraire()">Rechercher l'itinéraire</button>
+                        </div>
+                        <div id="map-error2">&nbsp;</div>
+                        <div class="map-container">
+                            <div class="map-placeholder">
+                                <iframe
+                                    id="map-iframe" load="lazy" allwfullscreen
+                                    src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCTaOFSLm6u9WbS_N7eswvN9DL7NjLVYuA&q=12+rue+des+Pluviers,79700+Rorthais+France&zoom=13">
+                                </iframe>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    
+    <div id="footer">
+        <div class="container">
+            <footer class="glass">
+                <div class="footer-content">
+                    <div class="copyright">
+                        &copy; 2025 Bryan Drouet. Tous droits réservés.
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>

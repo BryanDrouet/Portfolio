@@ -1,0 +1,324 @@
+body {
+    background: linear-gradient(
+        135deg,
+        #2b0000 0%,
+        #4b0000 15%,
+        #5e0000 35%,
+        #660000 50%,
+        #7a0a0a 70%,
+        #8c1a1a 85%,
+        #5c0000 100%
+    );
+}
+
+::selection {
+  background-color: #af2925;
+  color: #fff;
+}
+
+.shape {
+    background: rgba(255, 255, 255, 0.08);
+    box-shadow: 0 8px 32px rgba(255, 255, 255, 0.1);
+}
+
+.glass, .glassHover {
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+.glassHover:hover {
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.15);
+}
+
+.logo {
+    color: white;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.logo-icon svg {
+    filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.3));
+}
+
+.logo:hover .logo-icon svg {
+    filter: drop-shadow(0 4px 12px rgba(255, 255, 255, 0.4));
+}
+
+.nav-links a {
+    color: rgba(255, 255, 255, 0.9);
+	border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: white;
+    background: rgba(255, 255, 255, 0.1);
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+.hero-image img {
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+}
+
+.hero h1 {
+    color: white;
+    text-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.hero p {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.cta-button {
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.cta-button:hover {
+    background: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.feature-card {
+    color: white;
+}
+
+.feature-icon {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.feature-card h3 {
+    color: white;
+}
+
+.feature-card p {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.about-text {
+    color: white;
+}
+
+.about-text h2 {
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.about-text p {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.stat-card {
+    color: white;
+}
+
+.stat-number {
+    color: white;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.stat-label {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.team-section h2 {
+    color: white;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.team-member {
+    color: white;
+}
+
+.team-avatar {
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.team-member:hover .team-avatar {
+    border-color: rgba(255, 255, 255, 0.5);
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.team-member h3 {
+    color: white;
+}
+
+.team-member .role {
+    color: rgba(255, 255, 255, 0.7);
+    background: rgba(255, 255, 255, 0.15);
+}
+
+.team-member .bio {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.team-social a {
+    background: rgba(255, 255, 255, 0.1);
+    color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.team-social a:hover {
+    background: rgba(255, 255, 255, 0.3);
+    color: white;
+}
+
+.service-card {
+    color: white;
+}
+
+.service-icon {
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.service-card h3 {
+    color: white;
+}
+
+.service-card p {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.service-features li {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.service-features li:before {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.contact-form h2 {
+    color: white;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.form-group label {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.form-group input,
+.form-group textarea {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: white;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    background: rgba(255, 255, 255, 0.15);
+    border-color: rgba(255, 255, 255, 0.4);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.contact-info {
+    color: white;
+}
+
+.contact-info h2 {
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.contact-item-icon {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.contact-item-text h4 {
+    color: white;
+}
+
+.contact-item-text p {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.contact-map {
+    color: white;
+}
+
+.contact-map h2 {
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.map-container {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.map-placeholder {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.footer-content {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.footer-links a {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.footer-links a:hover {
+    color: white;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+.copyright {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.copyright a {
+	color: rgba(255, 255, 255, 0.6);
+}
+
+.cliquable{
+    color: rgba(255, 117, 117, 0.7);
+    transition: color 0.3s ease;
+}
+
+.cliquable:hover{
+    color: rgb(255, 180, 180);
+}
+
+#map-error1, #map-error2, .required {
+    color: #ff6765;
+}
+
+.error-status {
+    color: #ff6765;
+}
+
+.success-msg {
+    background: rgba(46, 204, 113, 0.9);
+    color: white;
+}
+
+#mobileOverlay {
+    background: rgba(0, 0, 0, 0.18);
+}
+
+#mobileOverlay.active {
+    background: rgba(0, 0, 0, 0.18);
+}
+
+.burger span {
+    background-color: white;
+}
+
+.glass {
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        background: rgba(255, 255, 255, 0.12);
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+}
