@@ -788,6 +788,12 @@ button[type="submit"] {
         gap: 15px;
     }
 
+    .team-grid > .team-member,
+    .team-grid .team-member {
+        grid-column: 1 / -1 !important;
+        width: 100%;
+    }
+
     .team-member {
         grid-column: span 1;
     }
